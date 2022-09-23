@@ -30,7 +30,7 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   max-width: 1600px;
   margin-left: auto;
@@ -96,9 +96,8 @@ h3 {
   display: flex;
   align-items: center;
 }
-
 .page-header .container::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -115,7 +114,7 @@ h3 {
 .logo {
   text-decoration: none;
   color: var(--accent-color);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 26px;
@@ -159,7 +158,6 @@ h3 {
   text-decoration: none;
   /* site-nav цвет ссылки при наведении */
 }
-
 .site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
@@ -169,9 +167,8 @@ h3 {
   color: var(--accent-color);
   /* нижнее подчеркивание текущей вкладки*/
 }
-
 .site-nav__link--current::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -207,7 +204,6 @@ h3 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* задается цвет подсвечивания ссылки при наведении курсором */
 }
-
 .contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
 }
@@ -244,7 +240,6 @@ h3 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* Кнопка - наведеие и фокус */
 }
-
 .directions__button:hover, .directions__button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
@@ -273,14 +268,13 @@ h3 {
 }
 
 .example-list__item {
-  flex-basis: calc(100% / 3 - var(--list-gap));
+  flex-basis: calc(33.3333333333% - var(--list-gap));
   margin-left: var(--list-gap);
   margin-bottom: var(--list-gap);
   text-align: center;
   background-color: var(--primary-bg-color);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .example-list__item:hover, .example-list__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -296,7 +290,7 @@ h3 {
 }
 
 .example-list__text {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -332,9 +326,7 @@ h3 {
   transform: translateY(100%);
   transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1), background-color 550ms cubic-bezier(0.4, 0, 0.2, 1), transform 550ms cubic-bezier(0.4, 0, 0.2, 1), opacity 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.example-list__link:focus .example-list__overlay,
-.example-list__link:hover .example-list__overlay {
+.example-list__link:focus .example-list__overlay, .example-list__link:hover .example-list__overlay {
   opacity: 1;
   transform: translateY(0);
 }
@@ -385,7 +377,7 @@ h3 {
 .social-footer-title {
   margin-left: 156px;
   color: var(--secondary-bg-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -411,7 +403,6 @@ h3 {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .social-footer-item__link:hover, .social-footer-item__link:focus {
   background-color: var(--accent-color);
 }
@@ -445,7 +436,6 @@ h3 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-
 .sign-up__input:focus {
   outline: none;
   border: 1px solid var(--secondary-text-color);
@@ -480,5 +470,4 @@ h3 {
   box-shadow: var(--button-border);
   border-radius: 4px;
   cursor: pointer;
-}
-/*# sourceMappingURL=potrfolio.css.map */
+}/*# sourceMappingURL=potrfolio.css.map */
