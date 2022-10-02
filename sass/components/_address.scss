@@ -1,21 +1,39 @@
-/* footer-contacts */
-.address__item:not(:last-child) {
+.address {
+  margin-top: 20px;
+}
+
+.address__list {
+  min-width: 231px;
+}
+
+.address__city-item {
+  margin-bottom: 6px;
+}
+
+.address__city-link {
+  @extend %address-link;
+
+  color: var(--secondary-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__mail-item {
   margin-bottom: 9px;
 }
 
-.address__link {
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
+/* phone - оформление */
+.address__mail-link,
+.address__phone-link {
+  @extend %address-link;
 
-.city-link {
-  color: var(--secondary-text-color);
-}
-
-.mail-link,
-.phone-link {
   color: var(--footer-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

@@ -1,4 +1,8 @@
+@import './base/reset';
 @import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+
 @import './layout/page-header';
 @import './components/logo';
 @import './components/site-nav';
@@ -9,6 +13,7 @@
 
 @import './layout/page-footer';
 @import './components/address';
-@import './components/social-footer';
-@import './components/sign-up-field';
+@import './components/subtitle';
+@import './components/socials';
+@import './components/sign-up';
 @import './components/button';

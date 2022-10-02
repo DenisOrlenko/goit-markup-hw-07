@@ -1,20 +1,20 @@
-/* .logo-web */
-.logo {
-  text-decoration: none;
-  color: var(--accent-color);
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+/* .logo-web - синий логотип */
+.page-header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
-/* WebStudio - черный цвет */
-.logo__studio--accent-black {
+.logo {
+  font-family: 'Raleway', sans-serif;
+  @include font($fz: 26px, $lh: 1.19, $fw: 700, $ls: 0.03em, $color: var(--accent-color));
+}
+
+/* Studio - черный цвет */
+.logo__accent--black {
   color: var(--logo-black-color);
 }
 
-/* WebStudio - белый цвет */
-.logo__studio--accent-white {
+/* Studio - белый цвет */
+.logo__accent--white {
   color: var(--secondary-text-color);
 }

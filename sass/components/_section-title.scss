@@ -1,10 +1,6 @@
-/* применение ЗАГОЛОВКА к однотипным секциям, в которых одинаковый цвет заголовка */
 .section-title {
   margin-bottom: 50px;
 
-  color: var(--title-text-color);
-  font-size: 36px;
-  line-height: 1.17;
+  @include font($fz: 36px, $lh: 1.17, $fw: 700, $ls: 0.03em, $color: var(--title-text-color));
   text-align: center;
-  letter-spacing: 0.03em;
 }

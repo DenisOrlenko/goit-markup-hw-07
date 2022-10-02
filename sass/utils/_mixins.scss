@@ -1,0 +1,23 @@
+@mixin circle-bordered($color, $radius) {
+  border: 1px solid $color;
+  border-radius: $radius;
+}
+
+@mixin centerFlex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin gapFlex($gap: var(--list-gap)) {
+  display: flex;
+  gap: $gap;
+}
+
+@mixin font($fz: 14px, $lh: 1.14, $fw: 400, $ls: 0.01em, $color: var(--title-text-color)) {
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: $fw;
+  letter-spacing: $ls;
+  color: $color;
+}
