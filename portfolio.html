@@ -1,313 +1,345 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="Предоставление услуг Веб разработки" />
-  <title>Веб студия</title>
-
-  <!-- Добавление Modern-normalize (в начале)-->
+  <meta charset="utf-8" />
+  <meta name="description" content="Надання послуг Веб-розробки" />
+  <title>Портфоліо</title>
+  <!-- Добавление шрифтов Google-fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <!-- Добавление Modern-normalize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Добавление шрифтов Google-fonts (после после modern-normalize) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-
-  <!-- Ссылка на CSS-файл (после modern-normalize)-->
-  <link rel="stylesheet" href="./css/potrfolio.min.css">
-
+  <!-- Ссылка на CSS-файл -->
+  <link rel="stylesheet" href="./css/potrfolio.min.css" />
 </head>
 
+<!--Body -->
 
 <body>
   <!-- Содержание -->
   <header class="page-header">
     <!-- HEADER -->
-    <div class="container">
-      <nav class="page-header__nav">
-        <a class="logo page-header__logo" href="./index.html">Web<span class="logo__studio logo__studio--accent-black">Studio</span>
+    <div class="container page-header__container">
+      <nav class="page-header__main-nav main-nav">
+        <a class="page-header__logo logo link" href="./index.html " lang="en">Web<span
+            class="logo__accent logo__accent--black">Studio</span>
         </a>
         <ul class="site-nav list">
           <li class="site-nav__item">
-            <a href="./index.html" class="site-nav__link ">Студия</a>
+            <a href="./index.html" class="site-nav__link link">Студія</a>
           </li>
           <li class="site-nav__item">
-            <a href="" class="site-nav__link site-nav__link--current">Портфолио</a>
+            <a href="./portfolio.html" class="site-nav__link site-nav__link--current link">Портфоліо</a>
           </li>
           <li class="site-nav__item">
-            <a href="" class="site-nav__link">Контакты</a>
+            <a href="./contacts.html" class="site-nav__link link">Контакти</a>
           </li>
         </ul>
       </nav>
       <!-- КОНТАКТЫ -->
       <ul class="contact list">
-        <li class="contact__item item">
-          <a href="mailto:info@devstudio.com" class="contact__link link">
+        <li class="contact__item">
+          <a href="mailto:info@devstudio.com" class="contact__link link" lang="en">
             <svg class="contact__icon" width="16" height="12">
-              <use href="./images/svg/icons.svg#icon-envelope-hover"></use>
+              <use href="./images/sprite.svg#icon-envelope-hover"></use>
             </svg>
-            info@devstudio.com</a>
+            info@devinfo@devstudio.com
+          </a>
         </li>
-        <li class="contact__item item">
+        <li class="contact__item">
           <a href="tel:+380961111111" class="contact__link link">
             <svg class="contact__icon" width="10" height="16">
-              <use href="./images/svg/icons.svg#icon-smartphone"></use>
+              <use href="./images/sprite.svg#icon-smartphone"></use>
             </svg>
-            +38 096 111 11 11</a>
+            +38 096 111 11 11
+          </a>
         </li>
       </ul>
     </div>
   </header>
 
   <main>
-    <section class="section directions">
+    <section class="directions section">
       <div class="container">
-        <h1 class="visually-hidden">Портфолио</h1>
+        <h1 class="visually-hidden">Портфоліо</h1>
         <ul class="directions__list list">
           <li class="directions__item">
-            <button class="directions__button">Все</button>
+            <button class="directions__button" type="button">Усі</button>
           </li>
-
           <li class="directions__item">
-            <button class="directions__button">Веб-сайты</button>
+            <button class="directions__button" type="button">Веб-сайти</button>
           </li>
-
           <li class="directions__item">
-            <button class="directions__button">Приложения</button>
+            <button class="directions__button" type="button">Додатки</button>
           </li>
-
           <li class="directions__item">
-            <button class="directions__button">Дизайн</button>
+            <button class="directions__button" type="button">Дизайн</button>
           </li>
-
           <li class="directions__item">
-            <button class="directions__button">Маркетинг</button>
+            <button class="directions__button" type="button">Маркетинг</button>
           </li>
         </ul>
 
-        <ul class="example-list list">
-          <li class="example-list__item">
-            <a href="" class="example-list__link">
-              <div class="example-list__thumb">
-                <img class="example-list__image" src="./images/portfolio/Технокряк-img(1).jpg" width="370" height="294" alt="Технокряк">
-                <p class="example-list__overlay">Технокряк это современная площадка распространения коронавируса. Компании
-                  используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.</p>
+        <ul class="example list">
+          <li class="example__item">
+            <a href="" class="example__link link">
+              <div class="example__overlay-thumb">
+                <img class="image" src="./images/portfolio/img1.jpg" width="370" height="294" alt="Технокряк" />
+                <p class="example__overlay">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
               </div>
-              <div class="example-list__content">
-                <h2 class="example-list__title">Технокряк</h2>
-                <p class="example-list__text">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-
-
-          <li class="example-list__item">
-            <a href="" class="example-list__link">
-              <div class="example-list__thumb">
-                <img class="example-list__image" src="./images/portfolio/Постер-img (2).jpg" width="370" height="294" alt="Постер">
-                <p class="example-list__overlay">Технокряк это современная площадка распространения коронавируса. Компании
-                  используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="example-list__content">
-                <h2 class="example-list__title">Постер New Orlean vs Golden Star</h2>
-                <p class="example-list__text">Дизайн</p>
+              <div class="example__content">
+                <h2 class="example__title">Технокряк</h2>
+                <p class="example__text">Веб-сайт</p>
               </div>
             </a>
           </li>
-
-          <li class="example-list__item">
-            <a href="" class="example-list__link">
-              <div class="example-list__thumb">
-                <img class="example-list__image" src="./images/portfolio/Seafood-img (3).jpg" width="370" height="294" alt="Ресторан Сифуд">
-                <p class="example-list__overlay">Технокряк это современная площадка распространения коронавируса. Компании
-                  используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.</p>
+          <li class="example__item">
+            <a href="" class="example__link link">
+              <div class="example__overlay-thumb">
+                <img class="image" src="./images/portfolio/img2.jpg" width="370" height="294" alt="Постер" />
+                <p class="example__overlay">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
               </div>
-              <div class="example-list__content">
-                <h2 class="example-list__title">Ресторан Seafood</h2>
-                <p class="example-list__text">Приложение</p>
-              </div>
-            </a>
-          </li>
-
-          <li class="example-list__item">
-            <a href="" class="example-list__link">
-              <div class="example-list__thumb">
-                <img class="example-list__image" src="./images/portfolio/Prime-img (4).jpg" width="370" height="294" alt="Проект Прайм">
-                <p class="example-list__overlay">Технокряк это современная площадка распространения коронавируса. Компании
-                  используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="example-list__content">
-                <h2 class="example-list__title"> Проект Prime</h2>
-                <p class="example-list__text">Маркетинг</p>
+              <div class="example__content">
+                <h2 class="example__title">
+                  Постер
+                  <span lang="en">New Orlean vs Golden Star</span>
+                </h2>
+                <p class="example__text">Дизайн</p>
               </div>
             </a>
           </li>
-
-          <li class="example-list__item">
-            <a href="" class="example-list__link">
-              <div class="example-list__thumb">
-                <img class="example-list__image" src="./images/portfolio/Boxes-img (5).jpg" width="370" height="294" alt="Проект Боксес">
-                <p class="example-list__overlay">Технокряк это современная площадка распространения коронавируса. Компании
-                  используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.</p>
+          <li class="example__item">
+            <a href="" class="example__link link">
+              <div class="example__overlay-thumb">
+                <img class="image" src="./images/portfolio/img3.jpg" width="370" height="294" alt="Ресторан Сіфуд" />
+                <p class="example__overlay">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
               </div>
-              <div class="example-list__content">
-                <h2 class="example-list__title">Проект Boxes</h2>
-                <p class="example-list__text">Приложение</p>
-              </div>
-            </a>
-          </li>
-
-          <li class="example-list__item">
-            <a href="" class="example-list__link">
-              <div class="example-list__thumb">
-                <img class="example-list__image" src="./images/portfolio/Inspiration-img (6).jpg" width="370" height="294"
-                  alt="Вдохновение без границ">
-                <p class="example-list__overlay">Технокряк это современная площадка распространения коронавируса. Компании
-                  используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="example-list__content">
-                <h2 class="example-list__title">Inspiration has no Borders</h2>
-                <p class="example-list__text">Веб-сайт</p>
+              <div class="example__content">
+                <h2 class="example__title">
+                  Ресторан
+                  <span lang="en">Seafood</span>
+                </h2>
+                <p class="example__text">Додаток</p>
               </div>
             </a>
           </li>
-
-          <li class="example-list__item">
-            <a href="" class="example-list__link">
-              <div class="example-list__thumb">
-                <img class="example-list__image" src="./images/portfolio/Limited-img (7).jpg" width="370" height="294"
-                  alt="Издание Ограниченная Серия">
-                <p class="example-list__overlay">Технокряк это современная площадка распространения коронавируса. Компании
-                  используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.</p>
+          <li class="example__item">
+            <a href="" class="example__link link">
+              <div class="example__overlay-thumb">
+                <img class="image" src="./images/portfolio/img4.jpg" width="370" height="294" alt="Проєкт Прайм" />
+                <p class="example__overlay">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу..
+                </p>
               </div>
-              <div class="example-list__content">
-                <h2 class="example-list__title">Издание Limited Edition</h2>
-                <p class="example-list__text">Дизайн</p>
-              </div>
-            </a>
-          </li>
-
-          <li class="example-list__item">
-            <a href="" class="example-list__link">
-              <div class="example-list__thumb">
-                <img class="example-list__image" src="./images/portfolio/LAB-img (8).jpg" width="370" height="294" alt="Проект ЛАБ">
-                <p class="example-list__overlay">Технокряк это современная площадка распространения коронавируса. Компании
-                  используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="example-list__content">
-                <h2 class="example-list__title">Проект LAB</h2>
-                <p class="example-list__text">Маркетинг</p>
+              <div class="example__content">
+                <h2 class="example__title">
+                  Проєкт
+                  <span lang="en">Prime</span>
+                </h2>
+                <p class="example__text">Маркетинг</p>
               </div>
             </a>
           </li>
-
-          <li class="example-list__item">
-            <a href="" class="example-list__link">
-              <div class="example-list__thumb">
-                <img class="example-list__image" src="./images/portfolio/Growing-img (9).jpg" width="370" height="294" alt="Растущий бизнес">
-                <p class="example-list__overlay">Технокряк это современная площадка распространения коронавируса. Компании
-                  используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.</p>
+          <li class="example__item">
+            <a href="" class="example__link link">
+              <div class="example__overlay-thumb">
+                <img class="image" src="./images/portfolio/img5.jpg" width="370" height="294" alt="Проект Боксес" />
+                <p class="example__overlay">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
               </div>
-              <div class="example-list__content">
-                <h2 class="example-list__title"> Growing Business</h2>
-                <p class="example-list__text">Приложение</p>
+              <div class="example__content">
+                <h2 class="example__title">
+                  Проєкт
+                  <span lang="en">Boxes</span>
+                </h2>
+                <p class="example__text">Додаток</p>
               </div>
             </a>
           </li>
+          <li class="example__item">
+            <a href="" class="example__link link">
+              <div class="example__overlay-thumb">
+                <img class="image" src="./images/portfolio/img6.jpg" width="370" height="294"
+                  alt="Натхнення без кордонів" />
+                <p class="example__overlay">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
+              </div>
+              <div class="example__content">
+                <h2 class="example__title">
+                  <span lang="en">Inspiration has no Borders</span>
+                </h2>
+                <p class="example__text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="example__item">
+            <a href="" class="example__link link">
+              <div class="example__overlay-thumb">
+                <img class="image" src="./images/portfolio/img7.jpg" width="370" height="294"
+                  alt="Видання Обмежена серія" />
+                <p class="example__overlay">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу..
+                </p>
+              </div>
+              <div class="example__content">
+                <h2 class="example__title">
+                  Видання
+                  <span lang="en">Limited Edition</span>
+                </h2>
+                <p class="example__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="example__item">
+            <a href="" class="example__link link">
+              <div class="example__overlay-thumb">
+                <img class="image" src="./images/portfolio/img8.jpg" width="370" height="294" alt="Проєкт ЛАБ" />
+                <p class="example__overlay">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
+              </div>
+              <div class="example__content">
+                <h2 class="example__title">
+                  Проєкт
+                  <span lang="en">LAB</span>
+                </h2>
+                <p class="example__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="example__item">
+            <a href="" class="example__link link">
+              <div class="example__overlay-thumb">
+                <img class="image" src="./images/portfolio/img9.jpg" width="370" height="294" alt="Зростаючий бизнес" />
+                <p class="example__overlay">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
+              </div>
+              <div class="example__content">
+                <h2 class="example__title">
+                  <span lang="en">Growing Business</span>
+                </h2>
+                <p class="example__text">Додаток</p>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
 
   <!-- Футер -->
   <footer class="page-footer">
-    <div class="container">
-      <div class="logo-title-label-thumb">
-        <a class="page-footer__logo logo" href="./index.html">Web<span class="logo__studio logo__studio--accent-white">Studio</span></a>
-        <h2 class="page-footer__social-title social-footer-title">присоединяйтесь</h2>
-        <label class="page-footer__sign-up-label sign-up-label" for="sign-up">Подпишитесь на рассылку</label>
-      </div>
+    <div class="container page-footer__container">
 
-      <div class="address-socials-input-thumb">
+      <div class="logo-address">
+        <a class="logo link" href="./index.html" lang="en">Web<span
+            class="logo__accent logo__accent--white accent white">Studio</span></a>
+
         <address class="address">
           <ul class="address__list list">
-
-            <li class="address__item city-item">
-              <a class="address__link city-link link"
+            <li class="address__city-item item">
+              <a class="address__city-link link"
                 href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&ll=50.42732700000001%2C30.538092&z=17"
-                target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
             </li>
 
-            <li class="mail-item address__item">
-              <a class="address__link mail-link link" href="mailto:info@example.com">info@example.com</a>
+            <li class="address__mail-item item">
+              <a href="mailto:info@example.com" class="address__mail-link link" lang="en">info@example.com</a>
             </li>
 
-            <li class="phone-item address__item">
-              <a class="address__link phone-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+            <li class="address__phone-item item">
+              <a href="tel:+380991111111" class="address__phone-link link">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>
+      </div>
 
-        <ul class="social-footer-list list">
-          <li class="social-footer-item item">
-            <a class="social-footer-item__link link" href="">
-              <svg class="social-footer-item__icon" width="20" height="20">
-                <use href="./images/svg/icons.svg#icon-instagram"></use>
+      <div class="page-footer__social-thumb social-thumb">
+        <h3 class="social-thumb__title subtitle">Приєднуйтесь</h3>
+        <ul class="socials list">
+          <li class="socials__item">
+            <a class="socials__link socials__link--footer-fill " href="https://www.instagram.com">
+              <svg class="socials__icon" width="20" height="20" aria-label="Посилання на Інстаграм">
+                <use href="./images/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
 
-          <li class="social-footer-item item">
-            <a class="social-footer-item__link link" href="">
-              <svg class="social-footer-item__icon" width="20" height="20">
-                <use href="./images/svg/icons.svg#icon-twitter"></use>
+          <li class="socials__item">
+            <a class="socials__link socials__link--footer-fill" href="https://twitter.com">
+              <svg class="socials__icon" width="20" height="20" aria-label="Посилання на Твіттер">
+                <use href="./images/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
 
-          <li class="social-footer-item item">
-            <a class="social-footer-item__link link" href="">
-              <svg class="social-footer-item__icon" width="20" height="20">
-                <use href="./images/svg/icons.svg#icon-facebook"></use>
+          <li class="socials__item">
+            <a class="socials__link socials__link--footer-fill" href="https://www.facebook.com">
+              <svg class="socials__icon" width="20" height="20" aria-label="Посилання на Фейсбук">
+                <use href="./images/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
 
-          <li class="social-footer-item item">
-            <a class="social-footer-item__link link" href="">
-              <svg class="social-footer-item__icon" width="20" height="20">
-                <use href="./images/svg/icons.svg#icon-linkedin"></use>
+          <li class="socials__item">
+            <a class="socials__link socials__link--footer-fill" href="https://ua.linkedin.com">
+              <svg class="socials__icon" width="20" height="20" aria-label="Посилання на Лінкедін">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
               </svg>
             </a>
           </li>
         </ul>
-
-        <form class="sign-up" action="#">
-          <div class="sign-up__field" role="group">
-            <input class="sign-up__input" name="sign-up-field" type="text" placeholder="Email" id="sign-up">
-            <button class="sign-up__button button" type="submit">Подписаться
-              <svg class="sign-up__icon" width="24" height="24">
-                <use href="./images/svg/icons.svg#icon-sign-up-button"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
       </div>
-    </div>
 
+
+      <form class="sign-up" action="#">
+        <div class="sign-up__field" role="group">
+          <label class="sign-up__label subtitle">
+            Підпишіться на розсилку
+            <input class="sign-up__input" name="sign-up-field" type="text" placeholder="Email">
+          </label>
+        </div>
+        <!-- <input class="sign-up-input" name="sign-up-field" type="text" placeholder="Email" id="sign-up"> -->
+        <button class="sign-up__button button" type="submit">Підписатися
+          <svg class="sign-up__icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-send-button"></use>
+          </svg>
+        </button>
+      </form>
     </div>
   </footer>
 </body>
+
 </html>
