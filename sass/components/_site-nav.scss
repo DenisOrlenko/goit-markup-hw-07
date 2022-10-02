@@ -27,7 +27,7 @@
 }
 
 /* current - Позиционирование открытой ссылки на текущей странице - задаю цвет текста*/
-&--current {
+.site-nav__link--current {
   color: var(--accent-color);
 
   /* Подчеркивание текущей страницы - absolute */
